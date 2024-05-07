@@ -19,7 +19,7 @@ def cargar_modelo(ruta_archivo):
 
 def predecir(modelo, datos):
     # Realizar las predicciones
-    predicciones = modelo.predict(datos)
+    predicciones = modelo.predict_proba(datos)
     return predicciones
 
 # Saludo al usuario
